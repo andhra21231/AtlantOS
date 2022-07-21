@@ -100,3 +100,6 @@ cd mkdir
 %say%  Downloading all Developer Scripts...
 ping -n 3 "">nul
 wget -r -np -nH https://library.%libver%.zacksh.my.id/library/
+cls
+ping -n 3 "">nul
+%say%  Downloading all Necessary Files...
