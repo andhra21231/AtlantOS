@@ -83,21 +83,20 @@ cls
 %say% Chill thats not my main purpose, but I'll download all Required Data!
 ping -n 3 "">nul
 cls
-goto downloadall
+goto alternate-download
 
-:downloadall
+:alternate-download
 %say%   .-----.
 %say%   ^| ^| ^| ^|
 %say%   ^|  -  ^|
 %say%   ^'-----^'
 %say% =============
-%say% Creating Required Directory...
+%say% Before I Download the Data, I'll check if you have the latest version of the Script.
 ping -n 3 "">nul
-mkdir library
-ping -n 3 "">nul
-cls
-cd library
-%say%  Downloading Firewall Scripts...
-ping -n 3 "">nul
-:: Add After Firewall Script Done
+%say% Done! Now I Will Transit you to DownScript-Win%wtos0%
+if "%wtos0%" == "10" goto wartoswin10
+if "%wtos0%" == "8.1" goto wartoswin7
+if "%wtos0%" == "8" goto wartoswin7
+if "%wtos0%" == "7" goto wartoswin7
+if "%wtos0%" == "Vista" goto wartoswin7
 cls
