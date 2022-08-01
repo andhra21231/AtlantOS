@@ -97,9 +97,7 @@ mkdir library
 ping -n 3 "">nul
 cls
 cd library
-%say%  Downloading all Developer Scripts...
+%say%  Downloading Firewall Scripts...
 ping -n 3 "">nul
-wget -r -np -nH https://library.%libver%.zacksh.my.id/library/
+:: Add After Firewall Script Done
 cls
-ping -n 3 "">nul
-%say%  Downloading all Necessary Files...
