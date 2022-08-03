@@ -94,9 +94,40 @@ goto alternate-download
 %say% Before I Download the Data, I'll check if you have the latest version of the Script.
 ping -n 3 "">nul
 %say% Done! Now I Will Transit you to DownScript-Win%wtos0%
-if "%wtos0%" == "10" goto wartoswin10
-if "%wtos0%" == "8.1" goto wartoswin7
-if "%wtos0%" == "8" goto wartoswin7
-if "%wtos0%" == "7" goto wartoswin7
-if "%wtos0%" == "Vista" goto wartoswin7
+if "%wtos0%" == "10" goto downloadfor10
+if "%wtos0%" == "8.1" goto downloadfor81
+if "%wtos0%" == "8" goto downloadfor8
+if "%wtos0%" == "7" goto downloadfor7
+if "%wtos0%" == "Vista" goto downloadforvista
 cls
+
+:downloadfor10
+mkdir %tmp%/library-ZackSH
+cd %tmp%/library-ZackSH
+
+::curl anything for windows 10
+
+:downloadfor81
+mkdir %tmp%/library-ZackSH
+cd %tmp%/library-ZackSH
+
+::curl anything for windows 8.1
+
+:downloadfor8
+mkdir %tmp%/library-ZackSH
+cd %tmp%/library-ZackSH
+
+::curl anything for windows 8
+
+:downloadfor7
+mkdir %tmp%/library-ZackSH
+cd %tmp%/library-ZackSH
+
+::curl anything for windows 7
+
+
+:downloadforvista
+mkdir %tmp%/library-ZackSH
+cd %tmp%/library-ZackSH
+
+::curl anything for windows vista
