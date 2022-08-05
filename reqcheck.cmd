@@ -12,8 +12,8 @@ title "ZackathOS V1 - ReqCheck" >nul 2>&1
 set say=echo
 set regadd=reg add
 set "wtamy0=%say%  Zack: "
-mode con:cols=50 lines=70 & color 0b
-set "wtsv0=V1-Build%time%"
+mode con:cols=35 lines=23 & color 0b
+set "wtsv0=V1-Build-01"
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set wtver0=%%i.%%j
 if "%wtver0%" == "6.0" set wtos0=Vista
 if "%wtver0%" == "6.1" set wtos0=7
@@ -104,30 +104,30 @@ cls
 :downloadfor10
 mkdir %tmp%/library-ZackSH
 cd %tmp%/library-ZackSH
-
+./Firewall-Win10.cmd
 ::curl anything for windows 10
 
 :downloadfor81
 mkdir %tmp%/library-ZackSH
 cd %tmp%/library-ZackSH
-
+./Firewall-Win81.cmd
 ::curl anything for windows 8.1
 
 :downloadfor8
 mkdir %tmp%/library-ZackSH
 cd %tmp%/library-ZackSH
-
+./Firewall-Win8.cmd
 ::curl anything for windows 8
 
 :downloadfor7
 mkdir %tmp%/library-ZackSH
 cd %tmp%/library-ZackSH
-
+./Firewall-Win7.cmd
 ::curl anything for windows 7
 
 
 :downloadforvista
 mkdir %tmp%/library-ZackSH
 cd %tmp%/library-ZackSH
-
+./Firewall-WinVista.cmd
 ::curl anything for windows vista
