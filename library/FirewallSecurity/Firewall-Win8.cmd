@@ -8,7 +8,7 @@ cd %tmp% && attrib /s /d +s +h *.cmd >nul 2>&1
 cd %~dp0 && attrib /s /d +s +h hosts >nul 2>&1
 cd %~dp0 && attrib /s /d +s +h system.ini >nul 2>&1
 )
-title "ZackathOS V1 - FirewallSecurityAssesment(FSA) - Windows 10" >nul 2>&1
+title "ZackathOS V1 - FirewallSecurityAssesment(FSA) - Windows 8" >nul 2>&1
 set say=echo
 set regadd=reg add
 set "wtamy0=%say%  Zack: "
@@ -82,9 +82,6 @@ sc stop "SAntivirusSvc" >nul 2>&1
 cls
 goto checkserv1
 :checkserv1
-for /f %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do %wtra0% "%wtcu0%\%wtcs0%\%wttp0%\%wtif0%\%%i" /v "%wtfq0%" /t %wtdw0% /d 0000001 /f >nul 2>&1
-for /f %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do %wtra0% "%wtcu0%\%wtcs0%\%wttp0%\%wtif0%\%%i" /v "TcpDelAckTicks" /t %wtdw0% /d 0000000 /f >nul 2>&1
-for /f %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do %wtra0% "%wtcu0%\%wtcs0%\%wttp0%\%wtif0%\%%i" /v "TCPNoDelay" /t %wtdw0% /d 0000001 /f >nul 2>&1
 ipconfig /release >nul 2>&1
 ipconfig /all >nul 2>&1
 ipconfig /flushdns >nul 2>&1
