@@ -17,7 +17,7 @@ set "wtqp0=QPCore"
 set "wtqp1=QQPCRTP"
 set "wtdt1=DiagTrack"
 mode con:cols=55 lines=10
-set "wtsv0=V1-Build%time%"
+set "wtsv0=V1-Build"
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set wtver0=%%i.%%j
 
 %say%   .-----.
