@@ -19,4 +19,9 @@ set regadd=reg add
 set "wtamy0=%say%  Zack: "
 mode con:cols=35 lines=23 & color 0b
 set "wtsv0=V1-Build-01"
-
+for /f "tokens=4-5 delims=. " %%i in ('ver') do set wtver0=%%i.%%j
+if "%wtver0%" == "6.0" set wtos0=Vista
+if "%wtver0%" == "6.1" set wtos0=7
+if "%wtver0%" == "6.2" set wtos0=8
+if "%wtver0%" == "6.3" set wtos0=8.1
+if "%wtver0%" == "10.0" set wtos0=10
