@@ -25,3 +25,10 @@ if "%wtver0%" == "6.1" set wtos0=7
 if "%wtver0%" == "6.2" set wtos0=8
 if "%wtver0%" == "6.3" set wtos0=8.1
 if "%wtver0%" == "10.0" set wtos0=10
+goto mainpurpose
+
+:mainpurpose
+%say% Proudly By ZackSH Technology
+%say% By andhra21231
+%say% Copyright 2020 - 2022 ZackSH Technology
+%say% Made By <3 For Everyone, But Zackh <3 is Only For A :)
