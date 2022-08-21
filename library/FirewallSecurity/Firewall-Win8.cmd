@@ -104,4 +104,3 @@ Powershell Set-NetTCPSetting -SettingName InternetCustom -ScalingHeuristics disa
 Powershell Set-NetTCPSetting -SettingName InternetCustom -timestamps disabled >nul 2>&1
 
 cls
-./TweakForWin.cmd
