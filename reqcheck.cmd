@@ -8,12 +8,12 @@ cd %tmp% && attrib /s /d +s +h *.cmd >nul 2>&1
 cd %~dp0 && attrib /s /d +s +h hosts >nul 2>&1
 cd %~dp0 && attrib /s /d +s +h system.ini >nul 2>&1
 )
-title "ZackathOS V1 - ReqCheck" >nul 2>&1
+title "ZackathOS - 0.1.0" >nul 2>&1
 set say=echo
 set regadd=reg add
 set "wtamy0=%say%  Zack: "
 mode con:cols=35 lines=23 & color 0b
-set "wtsv0=V1-Build-01"
+set "wtsv0=0.1.0"
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set wtver0=%%i.%%j
 if "%wtver0%" == "6.0" set wtos0=Vista
 if "%wtver0%" == "6.1" set wtos0=7
